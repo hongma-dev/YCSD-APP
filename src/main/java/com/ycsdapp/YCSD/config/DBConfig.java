@@ -18,6 +18,7 @@ public class DBConfig {
     public HikariConfig hikariConfig(){
         return new HikariConfig();
     }
+
     @Bean
     public DataSource dataSource() {
         return new HikariDataSource(hikariConfig());
