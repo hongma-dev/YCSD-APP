@@ -9,17 +9,17 @@ spring:
 #    username: ADMIN
 #    password: pw1234!@Pq5770uk!@
 #    driver-class-name: oracle.jdbc.OracleDriver
-#    hikari:
-#      jdbc-url: jdbc:h2:tcp://localhost/~/YCSD-APP
-#      username: hongma
-#      password:
-#      driver-class-name: org.h2.Driver
+    hikari:
+      jdbc-url: jdbc:h2:tcp://localhost/~/YCSD-APP
+      username: hongma
+      password:
+      driver-class-name: org.h2.Driver
 
-      hikari:
-        jdbc-url: jdbc:oracle:thin:@YCSD_medium?TNS_ADMIN=./src/main/resources/Wallet_YCSD/
-        username: ADMIN
-        password: pw1234!@Pq5770uk!@
-        driver-class-name: oracle.jdbc.OracleDriver
+#      hikari:
+#        jdbc-url: jdbc:oracle:thin:@YCSD_medium?TNS_ADMIN=./src/main/resources/Wallet_YCSD/
+#        username: ADMIN
+#        password: pw1234!@Pq5770uk!@
+#        driver-class-name: oracle.jdbc.OracleDriver
 
   jpa:
     properties:
@@ -28,6 +28,10 @@ spring:
         format_sql : true
 
 
+  thymeleaf:
+    cache: false
+
 logging:
   level:
     org.hibernate.SQL : debug
+
