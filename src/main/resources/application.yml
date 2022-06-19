@@ -3,12 +3,10 @@ server:
   port: 8080
 
 spring:
-  mvc:
-    static-path-pattern: /static/
-  resources:
-    static-locations: classpath:/static/
-    add-mappings: true
 
+  devtools:
+    restart:
+      enabled: true
 
 
   datasource:
