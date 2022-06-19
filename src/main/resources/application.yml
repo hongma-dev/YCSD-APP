@@ -3,6 +3,14 @@ server:
   port: 8080
 
 spring:
+  mvc:
+    static-path-pattern: /static/
+  resources:
+    static-locations: classpath:/static/
+    add-mappings: true
+
+
+
   datasource:
 
 #    url: jdbc:oracle:thin:@ATPDBNAME_high?TNS_ADMIN=/oracle/oracle_atp/Wallet_YCSD/

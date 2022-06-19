@@ -1,4 +1,4 @@
-package com.ycsdapp.YCSD.Main.controller;
+package com.ycsdapp.YCSD.main;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +8,6 @@ public class MainController {
 
     @RequestMapping("/")
     public String home(){
-        return "main/login/login";
+        return "index";
     }
 }
